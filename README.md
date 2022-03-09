@@ -1,2 +1,2 @@
 # SmartDietTrack
-Android Fitness Mobile App
+ An application desinged to help people reach their nutrition goals.

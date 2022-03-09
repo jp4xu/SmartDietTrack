@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">SmartDietTrack</string>
+
+    <!-- Login -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="meet_diet_nutrition_goals">Meet your diet and nutrition goals here!</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="smart_diet_track">Smart Diet Track</string>
+
+    <!-- Main -->
+    <string name="Today">Today</string>
+    <string name="what_you_ate">What you ate</string>
+
+    <!-- Settings -->
+    <string name="settings_name">Settings</string>
+    <string name="settings_username">User Name</string>
+    <string name="settings_userphoto">User Photo</string>
+    <string name="settings_email">username@gmail.com</string>
+    <string name="settings_profile">User Profile</string>
+    <string name="settings_permissions">Permissions</string>
+    <string name="settings_data">Data</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_camera">Camera Access</string>
+    <string name="settings_camera_desc">Enable camera access for photo capture</string>
+    <string name="settings_internet">Internet Access</string>
+    <string name="settings_internet_desc">Enable access to the Internet</string>
+    <string name="settings_logout">Logout</string>
+    <string name="settings_logout_desc">Logout from Smart Diet Track</string>
+    <string name="update_biometrics">Update Biometrics</string>
+
+    <!-- BiometricsInput -->
+    <string name="Biometrics">Biometrics</string>
+    <string name="Required">*Required</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Age">Age</string>
+    <string name="Weight">Weight</string>
+    <string name="Height">Height</string>
+    <string name="ft">ft</string>
+    <string name="inches">inches</string>
+    <string name="Yrs">yrs</string>
+    <string name="lbs">lbs</string>
+    <string name="Gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Activity">Activity</string>
+    <string name="NotActive">Not Active</string>
+    <string name="Active">Active</string>
+    <string name="VeryActive">Very Active</string>
+    <string name="LoseWeight">Lose Weight</string>
+    <string name="Maintain">Maintain</string>
+    <string name="GainWeight">Gain Weight</string>
+    <string name="WeightGoal">WeightGoal</string>
+    <string name="CalorieGoal">CalorieGoal</string>
+
+    <!-- TextInput -->
+    <string name="WhatDidYouEat">What did you eat?</string>
+
+    <!-- DBInput -->
+    <string name="DateFormat">dd/MM/yyyy</string>
+</resources>

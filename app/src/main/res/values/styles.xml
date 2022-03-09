@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SettingsFragmentStyle">
+        <item name="colorPrimary">@color/san_juan</item>
+        <item name="colorSecondary">@color/san_juan</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <!-- color of radio button -->
+        <item name="colorAccent">@color/san_juan</item>
+        <!-- default color of radio button -->
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+    </style>
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle_shape</item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+    </style>
+</resources>

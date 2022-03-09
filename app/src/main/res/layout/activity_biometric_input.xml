@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".BiometricInputActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAge"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/Age"
+        app:suffixText=""
+        app:boxStrokeColor="@color/san_juan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:helperTextEnabled="false"
+        app:startIconDrawable="@drawable/ic_person_calendar"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="3"
+        app:counterTextColor="@color/white"
+        app:hintTextColor="@color/waikawa_gray"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputAgeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:textCursorDrawable="@null"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputWeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/Weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/san_juan"
+        app:layout_constraintTop_toBottomOf="@+id/inputAge"
+        app:startIconDrawable="@drawable/ic_body"
+        app:suffixText="@string/lbs"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="3"
+        app:counterTextColor="@color/white"
+        app:hintTextColor="@color/waikawa_gray"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputWeightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:textCursorDrawable="@null"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/inputHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeight">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputHeightFt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/Height"
+            app:helperTextEnabled="false"
+            app:counterMaxLength="1"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_measure"
+            app:suffixText="ft."
+            app:boxStrokeColor="@color/san_juan"
+            app:hintTextColor="@color/waikawa_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputHeightFtText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:textCursorDrawable="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputHeightInches"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/inches"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            app:suffixText="in"
+            app:boxStrokeColor="@color/san_juan"
+            app:hintTextColor="@color/waikawa_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputHeightInchesText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:textCursorDrawable="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioSexSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputHeight">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/Male"
+            android:theme="@style/RadioButtonStyle"
+            android:checked="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/Female"
+            android:theme="@style/RadioButtonStyle"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioActivitySelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioSexSelection">
+        <RadioButton
+            android:id="@+id/radioNotActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/NotActive"
+            android:theme="@style/RadioButtonStyle"
+            android:checked="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioModerateActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/Active"
+            android:theme="@style/RadioButtonStyle"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioVeryActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/VeryActive"
+            android:theme="@style/RadioButtonStyle"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioWeightGoalSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioActivitySelection">
+        <RadioButton
+            android:id="@+id/radioLoseWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/LoseWeight"
+            android:theme="@style/RadioButtonStyle"
+            android:checked="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioMaintainWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/Maintain"
+            android:theme="@style/RadioButtonStyle"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioGainWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/GainWeight"
+            android:theme="@style/RadioButtonStyle"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmButton"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:text="@string/Confirm"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/all_button"
+        android:textAllCaps="false"
+        android:onClick="onConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioWeightGoalSelection" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/border_radius"
+        style="@style/HalfHeightContainer"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="219dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fugaz_one"
+            android:gravity="center"
+            android:text="@string/smart_diet_track"
+            android:textColor="@color/monarch"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="1.5"/>/>
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="@string/meet_diet_nutrition_goals"
+            android:textColor="@color/black"
+            android:shadowColor="@color/black"
+            />
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signInWithGoogle"
+            android:text="@string/sign_in_with_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/all_button"
+            />
+
+    </LinearLayout>
+</LinearLayout>

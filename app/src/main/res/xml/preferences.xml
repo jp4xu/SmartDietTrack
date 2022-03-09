@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="pref_account"
+        android:title="@string/settings_account">
+
+        <com.example.smartdiettrack.UserProfile
+            android:key="pref_profile"
+            android:layout="@layout/activity_user_profile"/>
+
+        <Preference
+            android:key="pref_logout"
+            android:title="@string/settings_logout"
+            android:summary="@string/settings_logout_desc"
+            android:icon="@drawable/ic_logout"
+            />
+
+        <Preference
+            android:key="pref_biometrics"
+            android:title="@string/Biometrics"
+            android:summary="@string/update_biometrics"
+            android:icon="@drawable/ic_body"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_permissions"
+        android:title="@string/settings_permissions">
+
+        <CheckBoxPreference
+            android:key="pref_internet"
+            android:title="@string/settings_internet"
+            android:summary="@string/settings_internet_desc"
+            android:defaultValue="true"
+            app:isPreferenceVisible="false"/>
+
+        <CheckBoxPreference
+            android:key="pref_camera"
+            android:title="@string/settings_camera"
+            android:summary="@string/settings_camera_desc"
+            android:icon="@drawable/ic_camera"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
